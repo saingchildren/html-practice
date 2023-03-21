@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Day 1 practice</title>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <div class="overlay" onclick="toggle()"></div>
+        <div class="navbar-l">
+          <img src="./logo.png" />
+        </div>
+        <div class="navbar-r">
+          <div class="navbar-r-t">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Content</a>
+            <a href="#">Task</a>
+          </div>
+          <div class="navbar-r-b">
+            <a href="#">Student</a>
+            <a href="#">Teacher</a>
+            <a href="#">Campus</a>
+            <a href="#">Course</a>
+          </div>
+        </div>
+        <button class="hamburgsIcon" onclick="toggle()">
+          <span class="material-icons">menu</span>
+        </button>
+      </nav>
+    </div>
+
+    <script type="text/javascript">
+      const toggle = () => {
+        document.body.classList.toggle("open");
+        console.log("click");
+      };
+    </script>
+  </body>
+</html>
